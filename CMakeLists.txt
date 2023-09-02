@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.2)
+project(dnn_conv_test)
+set(CMAKE_CXX_STANDARD 17)
+include_directories(${PROJECT_SOURCE_DIR}/include)
+link_libraries(${PROJECT_SOURCE_DIR}/lib)
+set(SRC_LIST dnn_test.cpp)
+add_executable(dnn_test ${SRC_LIST})
+target_link_libraries(dnn_test libdnnl.so)
