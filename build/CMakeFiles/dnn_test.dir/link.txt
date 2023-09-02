@@ -1,1 +1,0 @@
-/usr/bin/g++ -rdynamic CMakeFiles/dnn_test.dir/dnn_test.cpp.o -o dnn_test  -ldnnl 
